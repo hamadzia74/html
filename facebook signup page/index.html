@@ -1,0 +1,233 @@
+﻿<html>
+<head>
+<title>Facebook-log in or sign up</title>
+<link rel="icon" href="fb-icon.png"/>
+<style>
+body{
+    padding:0px;
+	margin:0px
+}
+table{
+    border:0px;
+	width:100%;
+	height:800px;
+	border-collapse:collapse;
+}
+#header-table-row{
+    background-color:#3C5A98; 
+    color:white;
+	width:100%;
+	height:100px;
+	position:fixed;
+	float:left;
+}
+#header-first-table-data{
+    padding-left:150px;
+	width:690px;
+}
+#header-image{
+    width:220px;
+	height:95px;
+}
+#header-login-button{
+   background-color:#365899;
+   color:white; 
+   border: 0.5px solid black;
+}
+span{
+   color:#9cb4d8;
+}
+#header-anchor{
+   text-decoration:none;
+}
+#main-table-row{
+    background:linear-gradient(white, #D3D8E8);
+	height:590px;
+	width:100%;
+	margin-top:100px;
+	float:left;
+}
+#main-first-table-data{
+    padding-left:170px;
+	padding-bottom:220px;
+}
+#main-image{
+    width:537px;
+	height:195px;
+}
+#main-heading-one{
+    font-size:40px;
+}
+#main-text{
+    font-size:20px;
+}
+.input{
+    height:40px;
+}
+#birthday-text{
+    font-size:23px;
+}
+.select{
+    height:30px;
+	width:60px;
+}
+#main-text-anchor{
+    text-decoration:none;
+	color:blue;
+	font-size:12px;
+}
+.main-anchor{
+    text-decoration:none;
+    color:blue;
+}
+#main-signup-button{
+    background-color:#659d50;
+	color:white;
+	font-size:20px;
+	height:40px;
+	width:170px;
+}
+#footer-table-row{
+    height:200px;
+    width:100%;
+}
+#footer-table-data{
+    font-size:14px;
+	padding-left:200px;
+}
+#horizontal-line{
+    width:85%;
+}
+.footer-anchor{
+    text-decoration:none;
+	color:#365899;
+}
+#footer-text{
+    color:#737373;
+	font-size:13px;
+}
+</style>
+</head>
+<body>
+<table>
+                   <!--table row (header)-->
+<tr id="header-table-row" style="margin:0 auto; display:table">
+                   <!--first table data (header)-->
+<td id="header-first-table-data" colspan="2">
+<img src="image/fb-logo.jpg" id="header-image" />
+</td>
+                   <!--second table data (header)-->  
+<td colspan="2">
+<label>Email or Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Password</label>
+<br/><input type="text" required />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" required />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" id="header-login-button" value="Log in" required /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="forget.html" id="header-anchor"><span>Forgetten account?</span>
+</a>
+</td>
+</tr>
+                    <!--table row one (main)-->
+<tr id="main-table-row" style="display:table">
+<td colspan="2" rowspan="2" id="main-first-table-data">
+<h2>Facebook helps you connect and share with the<br/>people in life.</h2>
+<img src="image/network-img.png" id="main-image" /></td>
+<td colspan="2" rowspan="2">
+<form method="post">
+<h1 id="main-heading-one">Create an account</h1>
+<p id="main-text"><b>It's free and always will be.</b></p>
+<input type="text" class="input" placeholder="Name" required size="24" title="What's your name?" maxlength="8" required />&nbsp;&nbsp;&nbsp;
+<input type="text" class="input" placeholder="Surname" required size="24" title="What's your name?" maxlength="8" minlength="3" required />
+<br/><br/>
+<input type="text" class="input" placeholder="Mobile number or email address" required size="55" title="Please enter a valid mobile 
+number or email address." required />
+<br/><br/>
+<input type="password" class="input" placeholder="New password" required size="24" title="Enter a combination of at least six numbers, letters and punctuation
+marks (like ! and &)." pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
+<p id="birthday-text">Birthday</p>
+<select class="select">
+<option>01</option><<option>02</option><option>03</option><option>04</option><option>05</option><option>06</option>
+<option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
+<option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+<option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option>
+<option>29</option><option>30</option><option>31</option>
+</select>
+<select class="select">
+<option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option>
+<option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+</select>
+<select class="select">
+<option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+<option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option>
+</select>
+<a href="#" id="main-text-anchor">
+&nbsp;&nbsp;&nbsp;&nbsp;why do I need to provide my<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+date of birth?</a><br/>
+<input type="radio" name="gender" id="gender" required /><b>Female</b>&nbsp;&nbsp;
+<input type="radio" name="gender" id="gender" required /><b>Male</b>
+<p><small>By clicking Sign UP, you agree to our<a href="#" style="text-decoration:none;color:blue"> Terms</a>,
+<a href="#" class="main-anchor">
+ Data Policy</a> and<br/>
+<a href="#" class="main-anchor">Cookie Policy</a>. You may receieve SMS notification from us and<br/>
+cant opt out at any time.</small></p>
+<input type="button" value="Sign Up" id="main-signup-button"><br/>
+<p><a href="#" class="main-anchor">Create a page</a> for a celebrity, band or business.</p>
+</form>
+</td>
+</tr>
+                         <!--table row two (main)-->
+<tr>
+</tr>
+                         <!--footer-->
+<tr id="footer-table-row" style="margin:0px auto;">
+<td colspan="4" id="footer-table-data">
+English (UK)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">اردو</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">پښتو</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">العربية</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">हिन्दी</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">বাংলা</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">ਪੰਜਾਬੀ</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">فارسی</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">ગુજરાતી</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Deutsch</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Español</a>
+<hr align="left" id="horizontal-line"/>
+<a href="#" class="footer-anchor">Sign Up</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Log In</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Messenger</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">FacebookLite</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Find Friends</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">People</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Profiles</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Pages</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Page categories</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Places</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Games</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Locations</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Marketplace</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Groups</a><br/>
+                        <a href="#" class="footer-anchor">Instagram</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Local</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Fundraisers</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">About</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Createad</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Create Page</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Developers</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Careers</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Privacy</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Cookies</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">AdChoices</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Terms</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Account security</a><br/>
+                        <a href="#" class="footer-anchor">Login help</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="footer-anchor">Help</a><br/><br/>
+<p id="footer-text">Facebook © 2019</p>
+</td>
+</tr>
+</table>
+</body>
+</html>
